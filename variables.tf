@@ -8,5 +8,5 @@ variable "policy" {
 
 variable "assume_role_arns" {
   default = []
-  type = list(string)
+  type    = list(string)
 }
