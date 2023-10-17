@@ -1,12 +1,7 @@
-variable "name" {
-  default = null
-}
+variable "name" {}
 
-variable "policy" {
-  default = null
-}
+variable "statement" {}
 
-variable "assume_role_arns" {
-  default = []
-  type    = list(string)
+variable "api_version" {
+  default = "2012-10-17"
 }
