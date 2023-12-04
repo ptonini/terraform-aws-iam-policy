@@ -4,10 +4,12 @@ resource "aws_iam_policy" "this" {
     Version   = var.api_version
     Statement = var.statement
   })
+
   lifecycle {
     ignore_changes = [
-      tags,
-      tags_all
+      tags["business_unit"],
+      tags["product"],
+      tags["env"],
     ]
   }
 }
